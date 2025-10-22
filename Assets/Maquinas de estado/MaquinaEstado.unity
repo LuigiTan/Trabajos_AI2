@@ -1376,7 +1376,7 @@ MonoBehaviour:
   currentState: {fileID: 11400000, guid: ea28b7edcd242ac4ca820a5d670bee4c, type: 2}
   context:
     currentTarget: {fileID: 0}
-    agent: {fileID: 878046540}
+    agent: {fileID: 0}
     battery: 100
     defaultDetectionRange: 15
     waypoints:

@@ -9,8 +9,10 @@ public class StateMachine : MonoBehaviour
     public State currentState;
 
     public FSMContext context = new FSMContext();//Segun tengo entendido esto es para poder pasar variables entre scripts
+    public Blackboard blackBoard = new Blackboard();
     private void Start()
     {
+        blackBoard.Set("Player", GameObject.FindGameObjectsWithTag("Player"));
         ChangeState(initialState);
     }
     private void Update()

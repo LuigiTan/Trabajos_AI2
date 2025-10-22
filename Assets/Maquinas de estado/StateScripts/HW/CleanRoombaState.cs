@@ -1,3 +1,5 @@
+using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -20,6 +22,7 @@ public class CleanRoombaState : State
 
     public override void UpdateState(StateMachine stateMachine)
     {
+        
         var agent = stateMachine.context.agent;//Me dice que es innecesario pero se me hace mas facil.
         var target = stateMachine.context.currentTarget;
 

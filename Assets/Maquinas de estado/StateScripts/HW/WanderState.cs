@@ -11,8 +11,8 @@ public class WanderState : State
 
         if (stateMachine.context.agent == null)
         {
-            if (!stateMachine.TryGetComponent(out stateMachine.context.agent))
-            {
+            if (!stateMachine.TryGetComponent(out stateMachine.context.agent))//Por alguna razon, tratar de sacar el agent por codigo no sirve, tuve que hacerlo manual
+            {                                                                 //Todavia queda pendiente la explicacion de porque 
                 Debug.LogError("No NavMeshAgent found on the GameObject!");
                 return;
             }
