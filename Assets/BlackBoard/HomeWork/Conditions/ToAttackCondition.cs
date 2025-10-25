@@ -1,10 +1,10 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ToAttackCondition", menuName = "FSM/Conditions/ToAttack")]
+[CreateAssetMenu(fileName = "ToAttackCondition", menuName = "FSM/Conditions/ToAttackCondition")]
 public class ToAttackCondition : Condition_Medieval
 {
     public override bool Check(StateMachine_Medieval sm)
     {
-        return sm.blackboard.Get<bool>("InCombat");
+        return sm.blackboard.Get<bool>("WarriorIsInCombat");
     }
 }

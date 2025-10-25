@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac6b434e3c7a1fc4b98412d38bd3a408, type: 3}
+  m_Name: WarriorAttackState
+  m_EditorClassIdentifier: 
+  transitions:
+  - condition: {fileID: 11400000, guid: d1043bf3cfc37f64694f82add63cf423, type: 2}
+    state: {fileID: 11400000, guid: 873080355dc44ba48aacf54fb32f5ce5, type: 2}
+  - condition: {fileID: 11400000, guid: 93532d6018f61244d97c40f67276f8f6, type: 2}
+    state: {fileID: 11400000, guid: 928f3834e31cfd948b56fedf047452a1, type: 2}

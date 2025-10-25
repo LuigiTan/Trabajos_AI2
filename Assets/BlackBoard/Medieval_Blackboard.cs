@@ -10,7 +10,12 @@ public class MedievalBlackboard:ScriptableObject
     public void Set<T>(string key, T value)
     {
         //data.TryAdd(key, value);
-        data[key] = value;//Esto deberia actualizar el valor si ya existe
+        //data[key] = value;//Esto deberia actualizar el valor si ya existe
+        //En teoria esto deberia permitirme tanto añadir nuevos datos como modificar datos existentes
+        if (data.ContainsKey(key))
+            data[key] = value;
+        else
+            data.Add(key, value);
     }
     public T Get<T>(string key)
     {
