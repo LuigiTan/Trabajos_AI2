@@ -56,7 +56,9 @@ public class WarriorAttackState : State_Medieval
     public override void ExitState(StateMachine_Medieval sm)
     {
         NavMeshAgent agent = sm.GetComponent<NavMeshAgent>();
+        var bb = sm.blackboard;
         agent.isStopped = false;
+        bb.Set("WarriorIsInCombat", false);
     }
 
     private IEnumerator AttackCoroutine(StateMachine_Medieval sm, GameObject target)

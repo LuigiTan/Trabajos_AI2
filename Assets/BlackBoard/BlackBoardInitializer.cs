@@ -17,7 +17,9 @@ public class BlackboardInitializer : MonoBehaviour
 
     [Header("Datos del Healer")]
     //[SerializeField] private Transform healerTransform;
-    [SerializeField] private float healerHealingRate = 10f;
+    [SerializeField] private float healerHealingRate = 1f;
+    [SerializeField] private float healingAmount = 10f;
+
     [SerializeField] private float followOffset = 2f;
     [SerializeField] private float fleeOffset = 8f;
     [SerializeField] private float healOffset = 1f;
@@ -31,7 +33,9 @@ public class BlackboardInitializer : MonoBehaviour
         }
 
         //Warrior
-        
+
+        blackboard.Set("WarriorPosition", warriorTransform);//Si solo lo pongo en update saca un error
+
         blackboard.Set("WarriorWaypoints", warriorWaypoints);
         blackboard.Set("WarriorHealth", warriorMaxHealth);
         blackboard.Set("WarriorMaxHealth", warriorMaxHealth);
@@ -45,6 +49,9 @@ public class BlackboardInitializer : MonoBehaviour
         //Healer
         
         blackboard.Set("HealingRate", healerHealingRate);
+        blackboard.Set("HealAmount", healingAmount);
+
+
         blackboard.Set("FollowOffset", followOffset);
         blackboard.Set("FleeOffset", fleeOffset);
         blackboard.Set("HealOffset", healOffset);

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54cb42e3ca4463548b4955580fcbad16, type: 3}
+  m_Name: HealerFleeState
+  m_EditorClassIdentifier: 
+  transitions:
+  - condition: {fileID: 11400000, guid: 7f104efae3647a54c90b4b2f8c9e1eaa, type: 2}
+    state: {fileID: 11400000, guid: 88e9df30c6d7a2b4995a4dd9b7d6e04a, type: 2}
+  - condition: {fileID: 11400000, guid: da72d329bcf976044b810cb2f213eb5a, type: 2}
+    state: {fileID: 11400000, guid: 43cfacfbde676714a9593feda34afe42, type: 2}

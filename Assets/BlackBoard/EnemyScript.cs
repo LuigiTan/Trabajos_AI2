@@ -24,6 +24,7 @@ public class EnemyScript : MonoBehaviour
         WarriorHP -= 70f;// daño fijo, costo por atacas
 
         blackboard.Set("WarriorHealth", WarriorHP);
+        blackboard.Set("WarriorIsInCombat", false);
 
         Debug.Log("Enemy died -> Warrior took colateral damage, new HP = " + WarriorHP);
 

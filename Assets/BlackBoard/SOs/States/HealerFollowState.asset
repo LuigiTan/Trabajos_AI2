@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a60e6cb096768914797909fdcbdca445, type: 3}
+  m_Name: HealerFollowState
+  m_EditorClassIdentifier: 
+  transitions:
+  - condition: {fileID: 11400000, guid: de8d635f3e09fd04ca2518bb4ad9d705, type: 2}
+    state: {fileID: 11400000, guid: 83b8dce22e7bed042a12d9c51ff5ced3, type: 2}
+  - condition: {fileID: 11400000, guid: da72d329bcf976044b810cb2f213eb5a, type: 2}
+    state: {fileID: 11400000, guid: 43cfacfbde676714a9593feda34afe42, type: 2}
