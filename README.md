@@ -17,7 +17,7 @@ evitar errores.) En cuanto note que el jugador se movio, asignara una nueva meta
 Si la distancia entre la IA y el jugador se vuelv demasiada, la IA entrara ya sea en el estado de "GoHome" o la secuencia del mismo nombre. Durante estos, primero se esperara unos segundos sin hacer nada
 y despues marcara su "Meta" como un punto en el mapa denominado como "Home". Una vez ahi entrara a Idle nuevamente en espera de que el jugador se vuelva a acercar a ella.
 
-#Dificultades: 
+# Dificultades: 
 
 El state machine por la forma en la que lo hice tenia el problema que si solamente tenia un solo IdleState, podia dar errores pues se metia a idle tanto al quedarme quieto yo como al llegar
 a la casa. Y como habia dos condiciones que eran igual de probables a la hora de tratar de sacarlo del idle state, podia dar un problema. Por ende acabe hacendo dos IdleStates, uno para cuando 
@@ -26,14 +26,14 @@ esta con el jugador y otro cuando esta esperando en la casa. De esta forma no ha
 En el arbol la verdad todo me dio dificultad porque me hacia bolas muy facil sobre todo porque lo confundia con otros tipos de arboles que hemos visto, aparte de que tuve algunos errores porque 
 algunas cosas se llamaban igual a otras de los StateMachine.
 
-#En este caso que arquitectura funciona mejor y por que.
+# En este caso que arquitectura funciona mejor y por que.
 
 En mi opinion los StateMachine se me siguen haciendo mas faciles de entender incluso sin no soy lo mas proficiente con ellos. Sin embargo puedo reconocer que para este tipo de IAs tal vez los 
 Arboles de Desicion son la opcion mas util, incluso si genuinamente siento que es algo de Overkill. Porque? Porque nos la dejan mas facil para escalarlos sin tener que pensar tanto en que las entradas
 y salidas no conflictuen como las StateMachines.
 Aun asi, me quedo con la FSM.
 
-#Diagramas:
+# Diagramas:
 
 ### FSM
 ![StateMachineDiagram](https://github.com/user-attachments/assets/f7232e38-7d1d-4591-bc7b-c9b620a77683)
