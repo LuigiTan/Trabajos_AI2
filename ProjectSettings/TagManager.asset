@@ -8,6 +8,8 @@ TagManager:
   - RechargeStation
   - Curiosities
   - Enemy
+  - Home
+  - Dog
   layers:
   - Default
   - TransparentFX
